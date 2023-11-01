@@ -7,17 +7,20 @@ public class Main {
         Room sypialnia = new Room(3, 3, 22.3, true, 20);
         Room kuchnia = new Room(2, 3, 22.0, false, 24);
 
+        System.out.println("Obecna temperatura: " + salon.getTemperature());
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(),
+                salon.getMinTemperature(), salon.getIsAirConditioner()));
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(),
+                salon.getMinTemperature(), salon.getIsAirConditioner()));
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(),
+                salon.getMinTemperature(), salon.getIsAirConditioner()));
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
-
-        System.out.println("Obecna temperatura: " + salon.getTemperature());
-        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(),
+                salon.getMinTemperature(), salon.getIsAirConditioner()));
     }
 }
