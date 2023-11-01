@@ -9,19 +9,15 @@ public class Main {
 
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        String result1 = salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner());
-        System.out.println(result1);
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        String result2 = salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner());
-        System.out.println(result2);
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        String result3 = salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner());
-        System.out.println(result3);
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
 
         System.out.println("Obecna temperatura: " + salon.getTemperature());
-        String result4 = salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner());
-        System.out.println(result4);
+        System.out.println("Czy udało się zmniejszyć temperaturę: " + salon.makeLowerTemperature(salon.getTemperature(), salon.getMinTemperature(), salon.getIsAirConditioner()));
     }
 }

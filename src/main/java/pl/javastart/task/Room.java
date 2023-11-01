@@ -56,35 +56,32 @@ public class Room {
         this.minTemperature = minTemperature;
     }
 
-    String makeLowerTemperature(double temperature, double minTemperature, boolean isAirConditioner) {
-        String result;
+    boolean makeLowerTemperature(double temperature, double minTemperature, boolean isAirConditioner) {
+        boolean result;
         if (isAirConditioner) {
             result = isTemperatureCouldBeChange(temperature, minTemperature);
         } else {
-            result = "Brak klimatyzatora";
+            result = false;
         }
         return result;
     }
 
-    private String isTemperatureCouldBeChange(double temperature, double minTemperature) {
-        String result;
+    private boolean isTemperatureCouldBeChange(double temperature, double minTemperature) {
+        boolean result;
         if (temperature > minTemperature) {
             result = isTemperatureMoreThanOne(temperature, minTemperature);
         } else {
-            result = "Osiągnięto minimalną temperaturę";
+            result = false;
         }
         return result;
     }
 
-    private String isTemperatureMoreThanOne(double temperature, double minTemperature) {
-        String result;
+    private boolean isTemperatureMoreThanOne(double temperature, double minTemperature) {
         if (temperature - minTemperature > 1) {
             setTemperature(temperature - 1);
-            result = "Zmniejszono temperaturę o 1 stopień";
         } else {
             setTemperature(temperature - (temperature - minTemperature));
-            result = "Zmniejszono temperaturę do poziomu temperatury minimalnej";
         }
-        return result;
+        return true;
     }
 }
